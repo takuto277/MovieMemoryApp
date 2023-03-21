@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2547" y="849"/>
+            <point key="canvasLocation" x="3472.5190839694656" y="848.59154929577471"/>
         </scene>
         <!--search-->
         <scene sceneID="7fe-jM-Vdn">
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUl-ZR-L0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="849"/>
+            <point key="canvasLocation" x="1869.4656488549617" y="848.59154929577471"/>
         </scene>
         <!--Movie Detail View Controller-->
         <scene sceneID="6TY-ar-evu">
@@ -81,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="1911" y="1668"/>
         </scene>
-        <!--home-->
+        <!--Home View Controller-->
         <scene sceneID="ysj-XT-GdU">
             <objects>
                 <viewController id="eCf-Q4-Wof" customClass="HomeViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,10 +90,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxD-dL-Fmq">
-                                <rect key="frame" x="0.0" y="59" width="393" height="71"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="66.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MovieMemoryApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynD-GO-iTN">
-                                        <rect key="frame" x="39.333333333333343" y="11.666666666666671" width="314.33333333333326" height="48"/>
+                                        <rect key="frame" x="39.333333333333343" y="9.3333333333333286" width="314.33333333333326" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -106,14 +106,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTj-Yt-GYL">
-                                <rect key="frame" x="0.0" y="414" width="393" height="142"/>
+                                <rect key="frame" x="0.0" y="436" width="393" height="133.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STv-Dd-Dy5">
-                                <rect key="frame" x="0.0" y="130" width="393" height="284"/>
+                                <rect key="frame" x="0.0" y="169.66666666666666" width="393" height="266.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhy-NA-aDI">
-                                        <rect key="frame" x="115.33333333333333" y="124.66666666666666" width="162.66666666666669" height="35"/>
+                                        <rect key="frame" x="115.33333333333333" y="115.66666666666666" width="162.66666666666669" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="映画の詳細に飛ぶ"/>
                                         <connections>
@@ -128,7 +128,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ra1-KI-Cee">
-                                <rect key="frame" x="0.0" y="556" width="393" height="213"/>
+                                <rect key="frame" x="0.0" y="569.33333333333337" width="393" height="199.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                             </view>
                         </subviews>
@@ -155,11 +155,11 @@
                             <constraint firstItem="STv-Dd-Dy5" firstAttribute="height" secondItem="kO1-8t-eyp" secondAttribute="height" multiplier="0.4" id="r1l-q6-VII"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="home" image="homekit" catalog="system" id="Cnc-J8-lZJ"/>
+                    <navigationItem key="navigationItem" id="hwL-Jp-IbV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzV-Up-MD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="849"/>
+            <point key="canvasLocation" x="1040.4580152671756" y="848.59154929577471"/>
         </scene>
         <!--Item3-->
         <scene sceneID="l2g-Jn-A8Q">
@@ -204,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mI9-SU-pDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1724" y="849"/>
+            <point key="canvasLocation" x="2649.6183206106871" y="848.59154929577471"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NN9-ik-A2L">
@@ -216,7 +216,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="eCf-Q4-Wof" kind="relationship" relationship="viewControllers" id="DjX-75-YQc"/>
+                        <segue destination="jsj-qk-HUv" kind="relationship" relationship="viewControllers" id="DjX-75-YQc"/>
                         <segue destination="8FM-Sa-ke5" kind="relationship" relationship="viewControllers" id="qxN-2s-Uss"/>
                         <segue destination="9sk-Ho-J7R" kind="relationship" relationship="viewControllers" id="l28-DF-kwE"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="M3X-3o-OEd"/>
@@ -241,6 +241,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxN-Ou-Mgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="442" y="1668"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="1EN-rq-9Ix">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jsj-qk-HUv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="home" image="homekit" catalog="system" id="Cnc-J8-lZJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="khe-FI-KHc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eCf-Q4-Wof" kind="relationship" relationship="rootViewController" id="Tyz-J3-3Wd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSe-uK-v26" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="848.59154929577471"/>
         </scene>
     </scenes>
     <resources>
