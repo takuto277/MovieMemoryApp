@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		99A6CAD529C98FEB00692B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CAD429C98FEB00692B00 /* AppDelegate.swift */; };
 		99A6CAD729C98FEB00692B00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CAD629C98FEB00692B00 /* SceneDelegate.swift */; };
-		99A6CAD929C98FEB00692B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CAD829C98FEB00692B00 /* ViewController.swift */; };
 		99A6CADC29C98FEB00692B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CADA29C98FEB00692B00 /* Main.storyboard */; };
 		99A6CADE29C98FEE00692B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CADD29C98FEE00692B00 /* Assets.xcassets */; };
 		99A6CAE129C98FEE00692B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CADF29C98FEE00692B00 /* LaunchScreen.storyboard */; };
 		99A6CAEC29C98FEF00692B00 /* MovieMemoryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CAEB29C98FEF00692B00 /* MovieMemoryAppTests.swift */; };
 		99A6CAF629C98FEF00692B00 /* MovieMemoryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CAF529C98FEF00692B00 /* MovieMemoryAppUITests.swift */; };
 		99A6CAF829C98FEF00692B00 /* MovieMemoryAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CAF729C98FEF00692B00 /* MovieMemoryAppUITestsLaunchTests.swift */; };
+		99A6CB0B29C9943400692B00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB0A29C9943400692B00 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		99A6CAD129C98FEB00692B00 /* MovieMemoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieMemoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A6CAD429C98FEB00692B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A6CAD629C98FEB00692B00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99A6CAD829C98FEB00692B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99A6CADB29C98FEB00692B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99A6CADD29C98FEE00692B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A6CAE029C98FEE00692B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		99A6CAF129C98FEF00692B00 /* MovieMemoryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieMemoryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A6CAF529C98FEF00692B00 /* MovieMemoryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMemoryAppUITests.swift; sourceTree = "<group>"; };
 		99A6CAF729C98FEF00692B00 /* MovieMemoryAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMemoryAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99A6CB0A29C9943400692B00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 		99A6CAD329C98FEB00692B00 /* MovieMemoryApp */ = {
 			isa = PBXGroup;
 			children = (
+				99A6CB0429C9915000692B00 /* Home */,
 				99A6CAD429C98FEB00692B00 /* AppDelegate.swift */,
 				99A6CAD629C98FEB00692B00 /* SceneDelegate.swift */,
-				99A6CAD829C98FEB00692B00 /* ViewController.swift */,
 				99A6CADA29C98FEB00692B00 /* Main.storyboard */,
 				99A6CADD29C98FEE00692B00 /* Assets.xcassets */,
 				99A6CADF29C98FEE00692B00 /* LaunchScreen.storyboard */,
@@ -125,6 +125,54 @@
 				99A6CAF729C98FEF00692B00 /* MovieMemoryAppUITestsLaunchTests.swift */,
 			);
 			path = MovieMemoryAppUITests;
+			sourceTree = "<group>";
+		};
+		99A6CB0429C9915000692B00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB0929C9921E00692B00 /* Entity */,
+				99A6CB0529C991DA00692B00 /* ViewController */,
+				99A6CB0629C991FB00692B00 /* Presenter */,
+				99A6CB0729C9920700692B00 /* Interactor */,
+				99A6CB0829C9921100692B00 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		99A6CB0529C991DA00692B00 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB0A29C9943400692B00 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		99A6CB0629C991FB00692B00 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		99A6CB0729C9920700692B00 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		99A6CB0829C9921100692B00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		99A6CB0929C9921E00692B00 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99A6CAD929C98FEB00692B00 /* ViewController.swift in Sources */,
 				99A6CAD529C98FEB00692B00 /* AppDelegate.swift in Sources */,
 				99A6CAD729C98FEB00692B00 /* SceneDelegate.swift in Sources */,
+				99A6CB0B29C9943400692B00 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
