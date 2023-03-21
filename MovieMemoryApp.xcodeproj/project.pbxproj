@@ -16,6 +16,11 @@
 		99A6CAF629C98FEF00692B00 /* MovieMemoryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CAF529C98FEF00692B00 /* MovieMemoryAppUITests.swift */; };
 		99A6CAF829C98FEF00692B00 /* MovieMemoryAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CAF729C98FEF00692B00 /* MovieMemoryAppUITestsLaunchTests.swift */; };
 		99A6CB0B29C9943400692B00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB0A29C9943400692B00 /* HomeViewController.swift */; };
+		99A6CB1429C9A71400692B00 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB1329C9A71400692B00 /* SearchViewController.swift */; };
+		99A6CB1A29C9A76E00692B00 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB1929C9A76E00692B00 /* BookListViewController.swift */; };
+		99A6CB1C29C9A78500692B00 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB1B29C9A78500692B00 /* SettingViewController.swift */; };
+		99A6CB1E29C9A79D00692B00 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB1D29C9A79D00692B00 /* MovieDetailViewController.swift */; };
+		99A6CB2029C9A7BD00692B00 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB1F29C9A7BD00692B00 /* SearchResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		99A6CAF529C98FEF00692B00 /* MovieMemoryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMemoryAppUITests.swift; sourceTree = "<group>"; };
 		99A6CAF729C98FEF00692B00 /* MovieMemoryAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMemoryAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		99A6CB0A29C9943400692B00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		99A6CB1329C9A71400692B00 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		99A6CB1929C9A76E00692B00 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		99A6CB1B29C9A78500692B00 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		99A6CB1D29C9A79D00692B00 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		99A6CB1F29C9A7BD00692B00 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,7 @@
 		99A6CAD329C98FEB00692B00 /* MovieMemoryApp */ = {
 			isa = PBXGroup;
 			children = (
-				99A6CB0429C9915000692B00 /* Home */,
+				99A6CB1029C9A4F800692B00 /* Modules */,
 				99A6CAD429C98FEB00692B00 /* AppDelegate.swift */,
 				99A6CAD629C98FEB00692B00 /* SceneDelegate.swift */,
 				99A6CADA29C98FEB00692B00 /* Main.storyboard */,
@@ -173,6 +183,99 @@
 			children = (
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		99A6CB0C29C9A3A000692B00 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1229C9A6FB00692B00 /* ViewController */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		99A6CB0D29C9A3AD00692B00 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1529C9A72700692B00 /* ViewController */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		99A6CB0E29C9A3CC00692B00 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1629C9A73D00692B00 /* ViewController */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		99A6CB0F29C9A3EC00692B00 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1729C9A74A00692B00 /* ViewController */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		99A6CB1029C9A4F800692B00 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB0429C9915000692B00 /* Home */,
+				99A6CB0C29C9A3A000692B00 /* Search */,
+				99A6CB0D29C9A3AD00692B00 /* BookList */,
+				99A6CB0E29C9A3CC00692B00 /* Setting */,
+				99A6CB0F29C9A3EC00692B00 /* MovieDetail */,
+				99A6CB1129C9A54400692B00 /* SearchResult */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		99A6CB1129C9A54400692B00 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1829C9A75400692B00 /* ViewController */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		99A6CB1229C9A6FB00692B00 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1329C9A71400692B00 /* SearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		99A6CB1529C9A72700692B00 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1929C9A76E00692B00 /* BookListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		99A6CB1629C9A73D00692B00 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1B29C9A78500692B00 /* SettingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		99A6CB1729C9A74A00692B00 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1D29C9A79D00692B00 /* MovieDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		99A6CB1829C9A75400692B00 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99A6CB1F29C9A7BD00692B00 /* SearchResultViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +411,12 @@
 			files = (
 				99A6CAD529C98FEB00692B00 /* AppDelegate.swift in Sources */,
 				99A6CAD729C98FEB00692B00 /* SceneDelegate.swift in Sources */,
+				99A6CB1429C9A71400692B00 /* SearchViewController.swift in Sources */,
 				99A6CB0B29C9943400692B00 /* HomeViewController.swift in Sources */,
+				99A6CB1E29C9A79D00692B00 /* MovieDetailViewController.swift in Sources */,
+				99A6CB1A29C9A76E00692B00 /* BookListViewController.swift in Sources */,
+				99A6CB2029C9A7BD00692B00 /* SearchResultViewController.swift in Sources */,
+				99A6CB1C29C9A78500692B00 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

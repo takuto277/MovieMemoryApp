@@ -11,7 +11,7 @@
         <!--setting-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SettingViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
         <!--search-->
         <scene sceneID="7fe-jM-Vdn">
             <objects>
-                <viewController id="8FM-Sa-ke5" sceneMemberID="viewController">
+                <viewController id="8FM-Sa-ke5" customClass="SearchViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bkf-4H-etP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,6 +62,22 @@
             </objects>
             <point key="canvasLocation" x="943" y="849"/>
         </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="6TY-ar-evu">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetail" id="XoE-mW-j61" customClass="MovieDetailViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dd1-ey-4UV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lXb-gg-G4Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F2P-5F-TuN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdS-Cu-0Vc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911" y="1668"/>
+        </scene>
         <!--home-->
         <scene sceneID="ysj-XT-GdU">
             <objects>
@@ -92,7 +108,21 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STv-Dd-Dy5">
                                 <rect key="frame" x="0.0" y="130" width="393" height="284"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhy-NA-aDI">
+                                        <rect key="frame" x="115.33333333333333" y="124.66666666666666" width="162.66666666666669" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="映画の詳細に飛ぶ"/>
+                                        <connections>
+                                            <action selector="button:" destination="eCf-Q4-Wof" eventType="touchUpInside" id="BOy-Kh-G6m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstItem="Uhy-NA-aDI" firstAttribute="centerX" secondItem="STv-Dd-Dy5" secondAttribute="centerX" id="Lji-qx-Ukj"/>
+                                    <constraint firstItem="Uhy-NA-aDI" firstAttribute="centerY" secondItem="STv-Dd-Dy5" secondAttribute="centerY" id="qkl-by-uwd"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ra1-KI-Cee">
                                 <rect key="frame" x="0.0" y="556" width="393" height="213"/>
@@ -131,7 +161,7 @@
         <!--Item3-->
         <scene sceneID="l2g-Jn-A8Q">
             <objects>
-                <viewController id="9sk-Ho-J7R" userLabel="Item3" sceneMemberID="viewController">
+                <viewController id="9sk-Ho-J7R" userLabel="Item3" customClass="BookListViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lbV-6J-rPe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +222,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bG-4I-Leb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1349" y="38"/>
+        </scene>
+        <!--Search Result View Controller-->
+        <scene sceneID="UUh-0m-WQW">
+            <objects>
+                <viewController id="mY4-PB-hWp" customClass="SearchResultViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KJ1-MA-cuo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8zC-v9-bfZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8uP-oN-DOB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxN-Ou-Mgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="1668"/>
         </scene>
     </scenes>
     <resources>
