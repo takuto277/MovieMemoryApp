@@ -57,6 +57,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="search" image="magnifyingglass" catalog="system" id="Dqa-b5-Yhi"/>
+                    <connections>
+                        <outlet property="tableView" destination="9dT-p9-HIu" id="GFt-6Z-IiE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUl-ZR-L0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
