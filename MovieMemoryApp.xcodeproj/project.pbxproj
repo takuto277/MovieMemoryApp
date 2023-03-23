@@ -23,6 +23,12 @@
 		99A6CB2029C9A7BD00692B00 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB1F29C9A7BD00692B00 /* SearchResultViewController.swift */; };
 		99A6CB2529C9E89C00692B00 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB2329C9E89C00692B00 /* SearchTableViewCell.swift */; };
 		99A6CB2629C9E89C00692B00 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB2429C9E89C00692B00 /* SearchTableViewCell.xib */; };
+		99A6CB2A29CC994100692B00 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB2829CC994000692B00 /* SearchViewController.xib */; };
+		99A6CB2C29CC99A600692B00 /* BookListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB2B29CC99A600692B00 /* BookListViewController.xib */; };
+		99A6CB2E29CCA0DA00692B00 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB2D29CCA0DA00692B00 /* SettingViewController.xib */; };
+		99A6CB3029CCA0F300692B00 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB2F29CCA0F300692B00 /* MovieDetailViewController.xib */; };
+		99A6CB3229CCA10A00692B00 /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB3129CCA10A00692B00 /* SearchResultViewController.xib */; };
+		99A6CB3429CCA12000692B00 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB3329CCA12000692B00 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,12 @@
 		99A6CB1F29C9A7BD00692B00 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		99A6CB2329C9E89C00692B00 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		99A6CB2429C9E89C00692B00 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		99A6CB2829CC994000692B00 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		99A6CB2B29CC99A600692B00 /* BookListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookListViewController.xib; sourceTree = "<group>"; };
+		99A6CB2D29CCA0DA00692B00 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		99A6CB2F29CCA0F300692B00 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
+		99A6CB3129CCA10A00692B00 /* SearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
+		99A6CB3329CCA12000692B00 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				99A6CB0A29C9943400692B00 /* HomeViewController.swift */,
+				99A6CB3329CCA12000692B00 /* HomeViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -247,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				99A6CB1329C9A71400692B00 /* SearchViewController.swift */,
+				99A6CB2829CC994000692B00 /* SearchViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -255,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				99A6CB1929C9A76E00692B00 /* BookListViewController.swift */,
+				99A6CB2B29CC99A600692B00 /* BookListViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -263,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				99A6CB1B29C9A78500692B00 /* SettingViewController.swift */,
+				99A6CB2D29CCA0DA00692B00 /* SettingViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -271,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				99A6CB1D29C9A79D00692B00 /* MovieDetailViewController.swift */,
+				99A6CB2F29CCA0F300692B00 /* MovieDetailViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -279,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				99A6CB1F29C9A7BD00692B00 /* SearchResultViewController.swift */,
+				99A6CB3129CCA10A00692B00 /* SearchResultViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -404,10 +422,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A6CB3029CCA0F300692B00 /* MovieDetailViewController.xib in Resources */,
+				99A6CB2E29CCA0DA00692B00 /* SettingViewController.xib in Resources */,
 				99A6CAE129C98FEE00692B00 /* LaunchScreen.storyboard in Resources */,
+				99A6CB3229CCA10A00692B00 /* SearchResultViewController.xib in Resources */,
 				99A6CB2629C9E89C00692B00 /* SearchTableViewCell.xib in Resources */,
+				99A6CB2A29CC994100692B00 /* SearchViewController.xib in Resources */,
 				99A6CADE29C98FEE00692B00 /* Assets.xcassets in Resources */,
+				99A6CB3429CCA12000692B00 /* HomeViewController.xib in Resources */,
 				99A6CADC29C98FEB00692B00 /* Main.storyboard in Resources */,
+				99A6CB2C29CC99A600692B00 /* BookListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
