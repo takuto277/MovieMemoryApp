@@ -24,6 +24,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         10
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! SearchTableViewCell
         cell.searchText.text = String(indexPath.row)

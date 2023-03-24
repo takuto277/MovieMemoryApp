@@ -17,8 +17,8 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "HomeViewController", bundle: nil)
-        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-        self.view = view
+//        let nib = UINib(nibName: "HomeViewController", bundle: nil)
+//        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+//        self.view = view
     }
 }
