@@ -11,7 +11,7 @@
         <!--setting-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SettingViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Setting" id="BYZ-38-t0r" customClass="SettingViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="setting" image="gearshape.fill" catalog="system" id="CfM-Ey-9ky"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -21,7 +21,7 @@
         <!--search-->
         <scene sceneID="7fe-jM-Vdn">
             <objects>
-                <viewController id="8FM-Sa-ke5" customClass="SearchViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Search" id="8FM-Sa-ke5" customClass="SearchViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="search" image="magnifyingglass" catalog="system" id="Dqa-b5-Yhi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUl-ZR-L0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -47,7 +47,7 @@
         <!--Home View Controller-->
         <scene sceneID="ysj-XT-GdU">
             <objects>
-                <viewController id="eCf-Q4-Wof" customClass="HomeViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="eCf-Q4-Wof" customClass="HomeViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="hwL-Jp-IbV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzV-Up-MD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -57,7 +57,7 @@
         <!--Item3-->
         <scene sceneID="l2g-Jn-A8Q">
             <objects>
-                <viewController id="9sk-Ho-J7R" userLabel="Item3" customClass="BookListViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookList" id="9sk-Ho-J7R" userLabel="Item3" customClass="BookListViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="book" image="book.closed.fill" catalog="system" id="MWN-zn-YxM" userLabel="Item3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mI9-SU-pDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,7 +87,7 @@
         <!--Search Result View Controller-->
         <scene sceneID="UUh-0m-WQW">
             <objects>
-                <viewController id="mY4-PB-hWp" customClass="SearchResultViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchResult" id="mY4-PB-hWp" customClass="SearchResultViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KJ1-MA-cuo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
