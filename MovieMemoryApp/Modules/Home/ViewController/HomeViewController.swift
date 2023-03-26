@@ -15,4 +15,11 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue" {
+            let nextView = segue.destination as! MovieDetailViewController
+            nextView.textLabel?.text = "詳細画面"
+        }
+    }
 }

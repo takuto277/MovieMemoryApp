@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="MovieMemoryApp" customModuleProvider="target">
             <connections>
+                <outlet property="textLabel" destination="6Au-69-lgd" id="tlm-5N-zG9"/>
                 <outlet property="view" destination="iN0-l3-epB" id="7GL-eY-T61"/>
             </connections>
         </placeholder>
@@ -18,9 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Au-69-lgd">
-                    <rect key="frame" x="166" y="203" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Au-69-lgd">
+                    <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -28,6 +28,10 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6Au-69-lgd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Qv-dH-mh1"/>
+                <constraint firstItem="6Au-69-lgd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dkT-kh-Wj4"/>
+            </constraints>
             <point key="canvasLocation" x="78" y="21"/>
         </view>
     </objects>

@@ -16,6 +16,13 @@ final class SearchViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: String(describing: SearchTableViewCell.self), bundle: nil), forCellReuseIdentifier: "searchCell")
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue" {
+            let nextView = segue.destination as! SearchResultViewController
+
+        }
+    }
 }
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
