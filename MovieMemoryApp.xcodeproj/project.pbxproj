@@ -334,6 +334,7 @@
 				99A6CACD29C98FEB00692B00 /* Sources */,
 				99A6CACE29C98FEB00692B00 /* Frameworks */,
 				99A6CACF29C98FEB00692B00 /* Resources */,
+				99A6CB3929D02B6700692B00 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -457,6 +458,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99A6CB3929D02B6700692B00 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect --format # 自動修正の有効化\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99A6CACD29C98FEB00692B00 /* Sources */ = {
