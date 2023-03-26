@@ -29,6 +29,4 @@ extension BookListViewController: UICollectionViewDelegate, UICollectionViewData
         cell.textLabel.text = String(indexPath.row)
         return cell
     }
-    
-    
 }

@@ -29,4 +29,8 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         cell.searchText.text = String(indexPath.row)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segue", sender: nil)
+    }
 }
