@@ -8,18 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookListViewController" customModule="MovieMemoryApp" customModuleProvider="target">
+            <connections>
+                <outlet property="collection" destination="dD3-Lc-B4j" id="DJ4-da-Hfs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="tuY-1l-QUu"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-jK-djn">
-                    <rect key="frame" x="0.0" y="59" width="375" height="56"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dD3-Lc-B4j">
-                    <rect key="frame" x="0.0" y="115" width="375" height="552"/>
+                    <rect key="frame" x="0.0" y="115" width="393" height="703"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YLf-Y5-7uK">
                         <size key="itemSize" width="128" height="128"/>

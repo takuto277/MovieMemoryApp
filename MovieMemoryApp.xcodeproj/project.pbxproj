@@ -29,6 +29,8 @@
 		99A6CB3029CCA0F300692B00 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB2F29CCA0F300692B00 /* MovieDetailViewController.xib */; };
 		99A6CB3229CCA10A00692B00 /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB3129CCA10A00692B00 /* SearchResultViewController.xib */; };
 		99A6CB3429CCA12000692B00 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB3329CCA12000692B00 /* HomeViewController.xib */; };
+		99A6CB3729D024FA00692B00 /* BookListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB3529D024FA00692B00 /* BookListCollectionViewCell.swift */; };
+		99A6CB3829D024FA00692B00 /* BookListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB3629D024FA00692B00 /* BookListCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		99A6CB2F29CCA0F300692B00 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		99A6CB3129CCA10A00692B00 /* SearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
 		99A6CB3329CCA12000692B00 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		99A6CB3529D024FA00692B00 /* BookListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewCell.swift; sourceTree = "<group>"; };
+		99A6CB3629D024FA00692B00 /* BookListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookListCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +318,8 @@
 			children = (
 				99A6CB2329C9E89C00692B00 /* SearchTableViewCell.swift */,
 				99A6CB2429C9E89C00692B00 /* SearchTableViewCell.xib */,
+				99A6CB3529D024FA00692B00 /* BookListCollectionViewCell.swift */,
+				99A6CB3629D024FA00692B00 /* BookListCollectionViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				99A6CAE129C98FEE00692B00 /* LaunchScreen.storyboard in Resources */,
 				99A6CB3229CCA10A00692B00 /* SearchResultViewController.xib in Resources */,
 				99A6CB2629C9E89C00692B00 /* SearchTableViewCell.xib in Resources */,
+				99A6CB3829D024FA00692B00 /* BookListCollectionViewCell.xib in Resources */,
 				99A6CB2A29CC994100692B00 /* SearchViewController.xib in Resources */,
 				99A6CADE29C98FEE00692B00 /* Assets.xcassets in Resources */,
 				99A6CB3429CCA12000692B00 /* HomeViewController.xib in Resources */,
@@ -464,6 +471,7 @@
 				99A6CB1E29C9A79D00692B00 /* MovieDetailViewController.swift in Sources */,
 				99A6CB1A29C9A76E00692B00 /* BookListViewController.swift in Sources */,
 				99A6CB2029C9A7BD00692B00 /* SearchResultViewController.swift in Sources */,
+				99A6CB3729D024FA00692B00 /* BookListCollectionViewCell.swift in Sources */,
 				99A6CB1C29C9A78500692B00 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
