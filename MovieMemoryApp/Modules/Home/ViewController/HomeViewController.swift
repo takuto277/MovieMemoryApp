@@ -16,6 +16,12 @@ final class HomeViewController: UIViewController {
         self.mainCollectionView.delegate = self
         self.mainCollectionView.dataSource = self
         self.mainCollectionView.register(UINib(nibName: String(describing: BookListCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: "bookList")
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let size = mainCollectionView.frame.height
+        layout.itemSize = CGSize(width: size, height: size)
+        mainCollectionView.collectionViewLayout = layout
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
