@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MovieMemoryApp" customModuleProvider="target">
             <connections>
+                <outlet property="mainCollectionView" destination="KSc-AK-cHf" id="iGG-0y-li5"/>
                 <outlet property="view" destination="iN0-l3-epB" id="i1E-c1-h4r"/>
             </connections>
         </placeholder>

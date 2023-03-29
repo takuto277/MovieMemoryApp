@@ -8,12 +8,14 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
-    @IBAction func button(_ sender: Any) {
-        performSegue(withIdentifier: "segue", sender: nil)
-    }
+
+    @IBOutlet weak var mainCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.mainCollectionView.delegate = self
+        self.mainCollectionView.dataSource = self
+        self.mainCollectionView.register(UINib(nibName: String(describing: BookListCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: "bookList")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -22,4 +24,18 @@ final class HomeViewController: UIViewController {
             nextView.textLabel?.text = "詳細画面"
         }
     }
+}
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collection.dequeueReusableCell(withReuseIdentifier: "bookList", for: indexPath) as! BookListCollectionViewCell
+        cell.textLabel.text = String(indexPath.row)
+        return cell
+    }
+    
+    
 }

@@ -11,50 +11,47 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="bookList" id="gTV-IL-0wX" customClass="BookListCollectionViewCell" customModule="MovieMemoryApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="261" height="205"/>
+            <rect key="frame" x="0.0" y="0.0" width="269" height="294"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="261" height="205"/>
+                <rect key="frame" x="0.0" y="0.0" width="269" height="294"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8OP-QU-IdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="261" height="116.66666666666667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="269" height="164.66666666666666"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4If-dV-N31">
-                        <rect key="frame" x="0.0" y="175.66666666666666" width="261" height="29.333333333333343"/>
+                        <rect key="frame" x="0.0" y="164.66666666666666" width="269" height="70.333333333333343"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbN-sh-BIO">
-                                <rect key="frame" x="109.66666666666669" y="4.3333333333333428" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbN-sh-BIO">
+                                <rect key="frame" x="113.66666666666669" y="3.6666666666666856" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="KbN-sh-BIO" firstAttribute="centerX" secondItem="4If-dV-N31" secondAttribute="centerX" id="PYR-Nw-mBU"/>
-                            <constraint firstItem="KbN-sh-BIO" firstAttribute="centerY" secondItem="4If-dV-N31" secondAttribute="centerY" id="ZZF-Wc-SzA"/>
-                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="8OP-QU-IdZ" secondAttribute="trailing" id="Fof-Ov-NxI"/>
-                <constraint firstItem="8OP-QU-IdZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IJk-jm-TXz"/>
-                <constraint firstAttribute="trailing" secondItem="4If-dV-N31" secondAttribute="trailing" id="KNr-iw-K46"/>
-                <constraint firstAttribute="bottom" secondItem="4If-dV-N31" secondAttribute="bottom" id="NA9-ze-r8a"/>
-                <constraint firstItem="8OP-QU-IdZ" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.8" id="bCh-Rb-k02"/>
-                <constraint firstItem="4If-dV-N31" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ejj-4B-hMD"/>
-                <constraint firstItem="8OP-QU-IdZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kaQ-fL-FkA"/>
-                <constraint firstItem="4If-dV-N31" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.2" id="pSh-Am-J7z"/>
+                <constraint firstItem="4If-dV-N31" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.3" id="8nm-do-HJ5"/>
+                <constraint firstItem="4If-dV-N31" firstAttribute="top" secondItem="8OP-QU-IdZ" secondAttribute="bottom" id="DK6-3g-Hia"/>
+                <constraint firstAttribute="trailing" secondItem="8OP-QU-IdZ" secondAttribute="trailing" id="QRV-mb-fYI"/>
+                <constraint firstAttribute="trailing" secondItem="4If-dV-N31" secondAttribute="trailing" id="XwZ-kb-4FF"/>
+                <constraint firstItem="8OP-QU-IdZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="beW-pT-n3p"/>
+                <constraint firstItem="8OP-QU-IdZ" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.7" id="hD4-BF-psa"/>
+                <constraint firstItem="8OP-QU-IdZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nPq-uh-sr4"/>
+                <constraint firstItem="4If-dV-N31" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zwL-Rz-ET7"/>
             </constraints>
-            <size key="customSize" width="261" height="205"/>
+            <size key="customSize" width="269" height="294"/>
             <connections>
                 <outlet property="textLabel" destination="KbN-sh-BIO" id="6WR-4l-D1e"/>
             </connections>
-            <point key="canvasLocation" x="197.70992366412213" y="74.295774647887328"/>
+            <point key="canvasLocation" x="203.81679389312976" y="104.92957746478874"/>
         </collectionViewCell>
     </objects>
     <resources>
