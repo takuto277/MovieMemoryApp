@@ -6,12 +6,27 @@
 //
 
 import UIKit
+import Swinject
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    let container = Container() { c in
+        c.register(HomeViewController.self) { r in
+            let controller = HomeViewController()
+            controller.movie = r.resolve(MovieData.self)
+            return controller
+        }
+    }
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.makeKeyAndVisible()
+        self.window = window
+        
+        window.rootViewController = container.resolve(HomeViewController.self)
+        
         return true
     }
 

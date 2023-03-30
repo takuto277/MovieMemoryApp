@@ -8,6 +8,7 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
+    var movie: MovieDataProtocol?
 
     @IBOutlet weak var mainCollectionView: UICollectionView!
     
