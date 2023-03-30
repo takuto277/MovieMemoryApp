@@ -161,11 +161,9 @@
 		99A6CB0429C9915000692B00 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				99A6CB0929C9921E00692B00 /* Entity */,
 				99A6CB0529C991DA00692B00 /* ViewController */,
 				99A6CB0629C991FB00692B00 /* Presenter */,
 				99A6CB0729C9920700692B00 /* Interactor */,
-				99A6CB0829C9921100692B00 /* Router */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -191,20 +189,6 @@
 			children = (
 			);
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		99A6CB0829C9921100692B00 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		99A6CB0929C9921E00692B00 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		99A6CB0C29C9A3A000692B00 /* Search */ = {

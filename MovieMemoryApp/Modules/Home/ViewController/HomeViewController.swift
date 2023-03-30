@@ -42,6 +42,4 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.textLabel.text = String(indexPath.row)
         return cell
     }
-    
-    
 }

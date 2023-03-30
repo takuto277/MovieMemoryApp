@@ -3,8 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,12 +33,6 @@
         <scene sceneID="6TY-ar-evu">
             <objects>
                 <viewController storyboardIdentifier="MovieDetail" modalPresentationStyle="fullScreen" id="XoE-mW-j61" customClass="MovieDetailViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dd1-ey-4UV">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="lXb-gg-G4Q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
                     <navigationItem key="navigationItem" id="F2P-5F-TuN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdS-Cu-0Vc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -97,12 +89,6 @@
         <scene sceneID="UUh-0m-WQW">
             <objects>
                 <viewController storyboardIdentifier="SearchResult" id="mY4-PB-hWp" customClass="SearchResultViewController" customModule="MovieMemoryApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KJ1-MA-cuo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8zC-v9-bfZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
                     <navigationItem key="navigationItem" id="8uP-oN-DOB"/>
                     <connections>
                         <segue destination="XoE-mW-j61" kind="show" identifier="segue" id="twS-QC-YxC"/>
@@ -197,8 +183,5 @@
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

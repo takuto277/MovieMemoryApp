@@ -30,7 +30,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         return 10
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! SearchTableViewCell
         cell.searchText.text = String(indexPath.row)
@@ -38,6 +37,12 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "segue", sender: nil)
+    //    performSegue(withIdentifier: "segue", sender: nil)
+        //stortboardを指定
+        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //ViewControllerをインスタンス化
+        let viewController = storyboard.instantiateViewController(identifier: "SearchResult") as! SearchResultViewController
+        //push遷移
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

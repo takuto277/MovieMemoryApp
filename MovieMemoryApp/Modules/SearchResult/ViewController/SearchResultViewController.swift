@@ -11,24 +11,13 @@ final class SearchResultViewController: UIViewController {
 
     // 画面遷移の影響か、collectionViewがnilになるため落ちる
     // 対策として、コードでcollectionViewを生成しているが、IBOutletを使用したいため要改善
-    //@IBOutlet weak var collection: UICollectionView!
-    var collection: UICollectionView!
+    @IBOutlet weak private var collection: UICollectionView!
 
-    override func loadView() {
-        super.loadView()
-        collection = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         collection.delegate = self
         collection.dataSource = self
         collection.register(UINib(nibName: String(describing: BookListCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: "bookList")
-        self.view.addSubview(collection)
-        collection.reloadData()
     }
 }
 
