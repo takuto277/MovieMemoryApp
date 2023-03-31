@@ -8,7 +8,8 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
-    var movie: MovieDataProtocol?
+    var movie: MovieDataProviderProtocol?
+    var movieDataRepository: MovieDataRepositoryProtocol?
 
     @IBOutlet weak var mainCollectionView: UICollectionView!
     
@@ -23,7 +24,6 @@ final class HomeViewController: UIViewController {
         let size = mainCollectionView.frame.height
         layout.itemSize = CGSize(width: size, height: size)
         mainCollectionView.collectionViewLayout = layout
-        self.movie?.movie()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,7 +41,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: "bookList", for: indexPath) as! BookListCollectionViewCell
-        cell.textLabel.text = String(indexPath.row)
+        guard let movieData = movieDataRepository?.fetch() else { return cell }
+        let image = UIImage(named: "totoro")
+        cell.imageView.image = UIImage(named: "totoro")
+        cell.textLabel.text = String(movieData[indexPath.row].1)
         return cell
     }
 }

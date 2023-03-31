@@ -19,7 +19,18 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8OP-QU-IdZ">
                         <rect key="frame" x="0.0" y="0.0" width="269" height="164.66666666666666"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5m9-db-92e">
+                                <rect key="frame" x="0.0" y="0.0" width="269" height="164.66666666666666"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5m9-db-92e" secondAttribute="trailing" id="aZg-Vu-RjF"/>
+                            <constraint firstItem="5m9-db-92e" firstAttribute="top" secondItem="8OP-QU-IdZ" secondAttribute="top" id="bn3-Pm-RFL"/>
+                            <constraint firstItem="5m9-db-92e" firstAttribute="leading" secondItem="8OP-QU-IdZ" secondAttribute="leading" id="eOv-CB-GEx"/>
+                            <constraint firstAttribute="bottom" secondItem="5m9-db-92e" secondAttribute="bottom" id="uV6-R0-5jn"/>
+                        </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4If-dV-N31">
                         <rect key="frame" x="0.0" y="164.66666666666666" width="269" height="70.333333333333343"/>
@@ -49,6 +60,7 @@
             </constraints>
             <size key="customSize" width="269" height="294"/>
             <connections>
+                <outlet property="imageView" destination="5m9-db-92e" id="PWO-pP-agq"/>
                 <outlet property="textLabel" destination="KbN-sh-BIO" id="6WR-4l-D1e"/>
             </connections>
             <point key="canvasLocation" x="203.81679389312976" y="104.92957746478874"/>
