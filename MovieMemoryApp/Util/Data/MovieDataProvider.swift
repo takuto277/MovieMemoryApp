@@ -7,6 +7,7 @@
 
 // TODO: Assetsから画像を取得するのに必要、本実装時に削除予定
 import UIKit
+import SQLite3
 
 protocol MovieDataProviderProtocol {
     func movie() -> [(UIImage?, Int)]
