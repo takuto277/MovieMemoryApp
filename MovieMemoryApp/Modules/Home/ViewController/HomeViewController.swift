@@ -23,6 +23,7 @@ final class HomeViewController: UIViewController {
         let size = mainCollectionView.frame.height
         layout.itemSize = CGSize(width: size, height: size)
         mainCollectionView.collectionViewLayout = layout
+        self.movie?.movie()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

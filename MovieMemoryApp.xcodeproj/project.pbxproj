@@ -33,8 +33,6 @@
 		99A6CB3429CCA12000692B00 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB3329CCA12000692B00 /* HomeViewController.xib */; };
 		99A6CB3729D024FA00692B00 /* BookListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A6CB3529D024FA00692B00 /* BookListCollectionViewCell.swift */; };
 		99A6CB3829D024FA00692B00 /* BookListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A6CB3629D024FA00692B00 /* BookListCollectionViewCell.xib */; };
-		99DBD19029D51D5E00C9E2E7 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 99DBD18F29D51D5E00C9E2E7 /* Swinject */; };
-		99DBD19229D51D5E00C9E2E7 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 99DBD19129D51D5E00C9E2E7 /* Swinject-Dynamic */; };
 		99DBD19529D64FEE00C9E2E7 /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DBD19429D64FEE00C9E2E7 /* SwinjectStoryboard.swift */; };
 		99DBD19829D6520C00C9E2E7 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DBD19729D6520C00C9E2E7 /* MovieData.swift */; };
 		F558B656DEDD891DFE7E2DC8 /* Pods_MovieMemoryApp_MovieMemoryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82736C6A790C0AE43FD83C1 /* Pods_MovieMemoryApp_MovieMemoryAppUITests.framework */; };
@@ -104,8 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99DBD19029D51D5E00C9E2E7 /* Swinject in Frameworks */,
-				99DBD19229D51D5E00C9E2E7 /* Swinject-Dynamic in Frameworks */,
 				75497A20F337B907BDFF41B7 /* Pods_MovieMemoryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +135,6 @@
 				327F1DF2A8B0FB64BF0A1BFC /* Pods-MovieMemoryAppTests.debug.xcconfig */,
 				91E2B8464C39FEA9AAD0BA41 /* Pods-MovieMemoryAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -395,8 +390,6 @@
 			);
 			name = MovieMemoryApp;
 			packageProductDependencies = (
-				99DBD18F29D51D5E00C9E2E7 /* Swinject */,
-				99DBD19129D51D5E00C9E2E7 /* Swinject-Dynamic */,
 			);
 			productName = MovieMemoryApp;
 			productReference = 99A6CAD129C98FEB00692B00 /* MovieMemoryApp.app */;
@@ -474,7 +467,6 @@
 			);
 			mainGroup = 99A6CAC829C98FEB00692B00;
 			packageReferences = (
-				99DBD18E29D51D5D00C9E2E7 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 99A6CAD229C98FEB00692B00 /* Products */;
 			projectDirPath = "";
@@ -1001,30 +993,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		99DBD18E29D51D5D00C9E2E7 /* XCRemoteSwiftPackageReference "Swinject" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/Swinject";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.8.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		99DBD18F29D51D5E00C9E2E7 /* Swinject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 99DBD18E29D51D5D00C9E2E7 /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = Swinject;
-		};
-		99DBD19129D51D5E00C9E2E7 /* Swinject-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 99DBD18E29D51D5D00C9E2E7 /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = "Swinject-Dynamic";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99A6CAC929C98FEB00692B00 /* Project object */;
 }

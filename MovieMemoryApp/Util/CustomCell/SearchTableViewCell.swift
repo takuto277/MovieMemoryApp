@@ -9,7 +9,7 @@ import UIKit
 
 final class SearchTableViewCell: UITableViewCell {
 
-    @IBOutlet private var searchText: UILabel!
+    @IBOutlet var searchText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
